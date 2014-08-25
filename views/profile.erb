@@ -1,0 +1,21 @@
+<head>
+	<title>Welcome</title>
+</head>
+
+<body>
+<b>Welcome, <%=@user.username%></b>
+<br>
+<b>Create new post:</b>
+<br><br>
+<form method="POST" action="/userpage">
+	<label for="[post]title">Post Title:</label><br>
+	<input type="text" name="[post]title">
+	<br>
+	<label for="[post]body">Body:</label><br>
+	<textarea name="[post]body"></textarea>
+	<br>
+	<input type="submit">
+</form>
+
+
+</body>
