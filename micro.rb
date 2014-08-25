@@ -50,3 +50,19 @@ get '/profile' do
 	@user = User.find(session[:user_id])
 	erb :profile
 end
+
+post '/userprofile' do
+	puts params.inspect
+	@user = User.find(session[:user_id])
+	@post = Post.new(params[:post])
+end
+
+get '/userprofile' do
+	@user = User.find(session[:user_id])
+	@posts = Posts.where(:user_id => @user.id)
+end
+
+
+
+
+

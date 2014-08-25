@@ -1,5 +1,5 @@
 <head>
-	<title>Welcome</title>
+	<title><%=@user.username%></title>
 </head>
 
 <body>
@@ -7,7 +7,7 @@
 <br>
 <b>Create new post:</b>
 <br><br>
-<form method="POST" action="/userpage">
+<form method="POST" action="/userprofile">
 	<label for="[post]title">Post Title:</label><br>
 	<input type="text" name="[post]title">
 	<br>
@@ -16,6 +16,5 @@
 	<br>
 	<input type="submit">
 </form>
-
 
 </body>
